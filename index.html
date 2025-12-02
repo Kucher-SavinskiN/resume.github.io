@@ -220,11 +220,11 @@
     </div>
 </section> -->
 
-<section class="section">
-    <div class="container">
-        <div class="row g-5 skills-education-row">
+<section class="section" id="skills-education-section">
+    <div class="container" id="skills-container">
+        <div class="row g-5 align-items-start" id="skills-row">
             <!-- Hard Skills -->
-            <div class="col-lg-6" data-aos="fade-right">
+            <div class="col-lg-7" data-aos="fade-right">
                 <h3>Hard Skills</h3>
                 <div data-aos="skill">
                     <div>Python</div><div class="skill-bar"><div class="skill-fill" data-percent="80%"></div></div>
@@ -235,7 +235,7 @@
                 </div>
             </div>
             <!-- Education -->
-            <div class="col-lg-6" data-aos="fade-left">
+            <div class="col-lg-5" data-aos="fade-left">
                 <h3>Education</h3>
                 <div class="mb-4">
                     <h5>NTUU "Igor Sikorsky Kyiv Polytechnic Institute"</h5>
@@ -293,5 +293,28 @@
         observer.observe(bar);
     });
 </script>
+<!--
+<script>
+    function updateSkillsLayout() {
+        const width = window.innerWidth;
+        const row = document.getElementById('skills-row');
+        const container = document.getElementById('skills-container');
+
+        // Отступ между колонками (от 40px на мобильке до 140px на 4K)
+        let gap = Math.round(width / 14);
+        gap = Math.max(40, Math.min(gap, 140));
+        row.style.gap = gap + 'px';
+
+        // Отступы от краёв экрана (убираем пустоту на ультрашироких экранах)
+        let sidePadding = Math.round(width / 20);
+        sidePadding = Math.max(30, Math.min(sidePadding, 200));
+        row.style.paddingLeft = sidePadding + 'px';
+        row.style.paddingRight = sidePadding + 'px';
+    }
+
+    // Запускаем при загрузке и при изменении размера окна
+    window.addEventListener('load', updateSkillsLayout);
+    window.addEventListener('resize', updateSkillsLayout);
+</script> -->
 </body>
 </html>
