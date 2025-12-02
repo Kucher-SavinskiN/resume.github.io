@@ -227,9 +227,9 @@
             <div class="col-lg-7" data-aos="fade-right">
                 <h3>Hard Skills</h3>
                 <div data-aos="skill">
-                    <div>Python</div><div class="skill-bar"><div class="skill-fill" data-percent="80%"></div></div>
-                    <div>Django</div><div class="skill-bar"><div class="skill-fill" data-percent="60%"></div></div>
-                    <div>HTML / CSS / JS</div><div class="skill-bar"><div class="skill-fill" data-percent="70%"></div></div>
+                    <div>Python</div><div class="skill-bar"><div class="skill-fill" data-percent="90%"></div></div>
+                    <div>Django</div><div class="skill-bar"><div class="skill-fill" data-percent="50%"></div></div>
+                    <div>HTML / CSS / JS</div><div class="skill-bar"><div class="skill-fill" data-percent="60%"></div></div>
                     <div>Git / GitHub</div><div class="skill-bar"><div class="skill-fill" data-percent="80%"></div></div>
                     <div>PostgreSQL / MySQL</div><div class="skill-bar"><div class="skill-fill" data-percent="90%"></div></div>
                 </div>
@@ -293,28 +293,6 @@
         observer.observe(bar);
     });
 </script>
-<!--
-<script>
-    function updateSkillsLayout() {
-        const width = window.innerWidth;
-        const row = document.getElementById('skills-row');
-        const container = document.getElementById('skills-container');
 
-        // Отступ между колонками (от 40px на мобильке до 140px на 4K)
-        let gap = Math.round(width / 14);
-        gap = Math.max(40, Math.min(gap, 140));
-        row.style.gap = gap + 'px';
-
-        // Отступы от краёв экрана (убираем пустоту на ультрашироких экранах)
-        let sidePadding = Math.round(width / 20);
-        sidePadding = Math.max(30, Math.min(sidePadding, 200));
-        row.style.paddingLeft = sidePadding + 'px';
-        row.style.paddingRight = sidePadding + 'px';
-    }
-
-    // Запускаем при загрузке и при изменении размера окна
-    window.addEventListener('load', updateSkillsLayout);
-    window.addEventListener('resize', updateSkillsLayout);
-</script> -->
 </body>
 </html>
