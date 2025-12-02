@@ -29,7 +29,7 @@
             pointer-events: none;
         }
         .section {
-            padding: 100px 0;
+            padding: 60px 0;
             background: #161b22;
             border-top: 1px solid #30363d;
         }
@@ -48,10 +48,7 @@
             background: linear-gradient(90deg, #58a6ff, #1f6feb);
             border-radius: 6px;
             width: 0;
-            transition: width 1.8s ease;
-        }
-        [data-aos="skill"] .skill-fill {
-            width: inherit !important;
+            transition: width 1.8s ease-out;
         }
         .photo {
             width: 200px;
@@ -60,7 +57,7 @@
             border: 6px solid #238636;
             box-shadow: 0 0 40px rgba(35, 134, 54, 0.5);
         }
-        h1, h2, h5 { color: #58a6ff; }
+        h1, h2, h3, h5 { color: #58a6ff; }
         a { color: #58a6ff; text-decoration: none; }
         a:hover { color: #1f6feb; text-decoration: underline; }
         .btn-primary {
@@ -84,24 +81,35 @@
             .hero { padding: 100px 0 80px; }
             .photo { width: 180px; height: 180px; }
         }
+        .skills-education-row h3 {
+            margin-top: 0;
+            margin-bottom: 3rem;
+            font-size: 1.8rem;
+        }
     </style>
 </head>
 <body>
 
-<!-- HERO -->
+<!--HERO-->
 <section class="hero text-center text-md-start position-relative">
     <div class="container position-relative">
-        <div class="row align-items-center">
-            <div class="col-md-4 text-center mb-5 mb-md-0" data-aos="zoom-in" data-aos-duration="1000">
-                <img src="resources/1.jpg" class="rounded-circle photo" alt="Kucher-Savinskyi Nazarii">
+        <div class="row align-items-center justify-content-center"> <!-- добавили justify-content-center -->
+
+            <!-- Колонка с фото — теперь идеально по центру вертикально и горизонтально -->
+            <div class="col-md-4 d-flex align-items-center justify-content-center mb-5 mb-md-0"
+                 data-aos="zoom-in" data-aos-duration="1000">
+                <img src="resources/1.jpg"
+                     alt="Nazarii Kucher-Savinskyi"
+                     class="rounded-circle photo">
             </div>
+
             <div class="col-md-8">
                 <h1 class="display-3 fw-bold" data-aos="fade-down" data-aos-duration="1000">Nazarii Kucher-Savinskyi</h1>
                 <p class="lead fs-2 mb-4 opacity-90" data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000">
                     Manual QA Engineer & Python Developer
                 </p>
                 <p class="fs-5 mb-5" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-                    Kyiv, Ukraine • +380 66 728 82 04<br>
+                    Kyiv, Ukraine • +380 66 728 82 04 (Viber, WhatsApp)<br>
                     <a href="mailto:zxcaaa12@outlook.com"><i class="fas fa-envelope"></i> zxcaaa12@outlook.com</a> •
                     <a href="https://t.me/greezleee"><i class="fab fa-telegram"></i> @greezleee</a>
                 </p>
@@ -134,7 +142,7 @@
     </div>
 </section>
 
-<!-- EXPERIENCE -->
+<!-- EXPERIENCE-->
 <section class="section">
     <div class="container">
         <h2 class="mb-5" data-aos="fade-up">Experience</h2>
@@ -157,7 +165,7 @@
     </div>
 </section>
 
-<!-- SKILLS -->
+<!--
 <section class="section">
     <div class="container">
         <h2 class="mb-5" data-aos="fade-up">Hard Skills</h2>
@@ -190,7 +198,6 @@
     </div>
 </section>
 
-<!-- EDUCATION -->
 <section class="section">
     <div class="container">
         <h2 class="mb-5" data-aos="fade-up">Education</h2>
@@ -206,8 +213,43 @@
                 <p class="text-muted">September 2018 — June 2022</p>
             </div>
             <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-                <h5>Web Application Development using Python/Django</h5>
+                <h5>Web Application Development Course using Python/Django</h5>
                 <p class="text-muted">June 2021 — December 2021, Online</p>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<section class="section">
+    <div class="container">
+        <div class="row g-5 skills-education-row">
+            <!-- Hard Skills -->
+            <div class="col-lg-6" data-aos="fade-right">
+                <h3>Hard Skills</h3>
+                <div data-aos="skill">
+                    <div>Python</div><div class="skill-bar"><div class="skill-fill" data-percent="80%"></div></div>
+                    <div>Django</div><div class="skill-bar"><div class="skill-fill" data-percent="60%"></div></div>
+                    <div>HTML / CSS / JS</div><div class="skill-bar"><div class="skill-fill" data-percent="70%"></div></div>
+                    <div>Git / GitHub</div><div class="skill-bar"><div class="skill-fill" data-percent="80%"></div></div>
+                    <div>PostgreSQL / MySQL</div><div class="skill-bar"><div class="skill-fill" data-percent="90%"></div></div>
+                </div>
+            </div>
+            <!-- Education -->
+            <div class="col-lg-6" data-aos="fade-left">
+                <h3>Education</h3>
+                <div class="mb-4">
+                    <h5>NTUU "Igor Sikorsky Kyiv Polytechnic Institute"</h5>
+                    <p class="text-muted">Master's degree in "Information Systems and Technologies"<br>Graduated — June 2024</p>
+                </div>
+                <div class="col-lg-8" data-aos="fade-up">
+                    <h5>NTUU "Igor Sikorsky Kyiv Polytechnic Institute"</h5>
+                    <p class="text-muted mb-2">Bachelor's degree in "Information Systems and Technologies"</p>
+                    <p class="text-muted">September 2018 — June 2022</p>
+                </div>
+                <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+                    <h5>Web Application Development Course using Python/Django</h5>
+                    <p class="text-muted">June 2021 — December 2021, Online</p>
+                </div>
             </div>
         </div>
     </div>
@@ -234,10 +276,21 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-    AOS.init({
-        once: true,
-        duration: 1000,
-        easing: 'ease-out'
+    AOS.init({ once: true, duration: 1000, easing: 'ease-out' });
+
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const fill = entry.target.querySelector('.skill-fill');
+                const percent = fill.getAttribute('data-percent');
+                fill.style.width = percent;
+            }
+        });
+    }, { threshold: 0.3 });
+
+    document.querySelectorAll('.skill-bar').forEach(bar => {
+        observer.observe(bar);
     });
 </script>
 </body>
