@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nazarii Kucher-Savinskyi — Manual QA Engineer & Python Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+            background: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', sans-serif;
+            overflow-x: hidden;
+        }
+        .hero {
+            background: linear-gradient(135deg, #1a1f2e 0%, #16213e 100%);
+            color: #ffffff;
+            padding: 100px 0 80px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse"><path d="M 80 0 L 0 0 0 80" fill="none" stroke="%23262f42" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)" opacity="0.3"/></svg>');
+            pointer-events: none;
+        }
+        .section {
+            padding: 100px 0;
+            background: #161b22;
+            border-top: 1px solid #30363d;
+        }
+        .section:nth-child(even) {
+            background: #0d1117;
+        }
+        .skill-bar {
+            height: 10px;
+            background: #30363d;
+            border-radius: 6px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        .skill-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #58a6ff, #1f6feb);
+            border-radius: 6px;
+            width: 0;
+            transition: width 1.8s ease;
+        }
+        [data-aos="skill"] .skill-fill {
+            width: inherit !important;
+        }
+        .photo {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 6px solid #238636;
+            box-shadow: 0 0 40px rgba(35, 134, 54, 0.5);
+        }
+        h1, h2, h5 { color: #58a6ff; }
+        a { color: #58a6ff; text-decoration: none; }
+        a:hover { color: #1f6feb; text-decoration: underline; }
+        .btn-primary {
+            background: #238636;
+            border: none;
+            padding: 12px 32px;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background: #2ea043;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(35,134,54,0.4);
+        }
+        footer {
+            background: #010409;
+            color: #8b949e;
+            padding: 40px 0;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 768px) {
+            .hero { padding: 100px 0 80px; }
+            .photo { width: 180px; height: 180px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero text-center text-md-start position-relative">
+    <div class="container position-relative">
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center mb-5 mb-md-0" data-aos="zoom-in" data-aos-duration="1000">
+                <img src="resources/1.jpg" class="rounded-circle photo" alt="Kucher-Savinskyi Nazarii">
+            </div>
+            <div class="col-md-8">
+                <h1 class="display-3 fw-bold" data-aos="fade-down" data-aos-duration="1000">Nazarii Kucher-Savinskyi</h1>
+                <p class="lead fs-2 mb-4 opacity-90" data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000">
+                    Manual QA Engineer & Python Developer
+                </p>
+                <p class="fs-5 mb-5" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                    Kyiv, Ukraine • +380 66 728 82 04 (Viber, WhatsApp)<br>
+                    <a href="mailto:zxcaaa12@outlook.com"><i class="fas fa-envelope"></i> zxcaaa12@outlook.com</a> •
+                    <a href="https://t.me/greezleee"><i class="fab fa-telegram"></i> @greezleee</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" data-aos="fade-up">
+    <div class="container">
+        <h2 class="mb-5">About Me</h2>
+        <p class="lead">
+            Engaged in manual testing of integrated systems (desktop app, PyQT), knowledgeable in testing theory and documentation creation. Experienced in Python development using Django, Spark, Flask technologies. Also have experience in web development with HTML/CSS/JS, worked on integrating large language models into projects.
+        </p>
+        <h5 class="mt-5 mb-3">Languages</h5>
+        <ul>
+            <li>English — Upper Intermediate (B2)</li>
+            <li>Russian — Advanced (C1)</li>
+            <li>Ukrainian — Native</li>
+        </ul>
+        <h5 class="mt-4 mb-3">Soft Skills</h5>
+        <ul>
+            <li>Interested in gaining experience and professional development</li>
+            <li>Communicative, easily find common ground in a team</li>
+            <li>Flexible to learning, quickly mastering new technologies</li>
+            <li>Responsible, ready to diligently perform assigned tasks</li>
+            <li>Meticulous in work</li>
+        </ul>
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section">
+    <div class="container">
+        <h2 class="mb-5" data-aos="fade-up">Experience</h2>
+        <div class="row gy-5">
+            <div class="col-12" data-aos="fade-right" data-aos-delay="100">
+                <div class="d-flex">
+                    <div class="flex-shrink-0 text-success fw-bold" style="width: 140px;">Jan 2025 — Nov 2025</div>
+                    <div class="flex-grow-1 ms-4">
+                        <h5 class="mb-1">Engineer in Integrated Testing of Mining Process Systems • COMSPEC Corporation</h5>
+                        <p class="text-muted mb-2">Offline, Kyiv</p>
+                        <ul>
+                            <li>Manual testing of integrated systems</li>
+                            <li>Documentation creation and testing desktop PyQT application</li>
+                            <li>Reference for recommendations: <a href="tel:+380970069011">+380 97 006 90 11</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section">
+    <div class="container">
+        <h2 class="mb-5" data-aos="fade-up">Hard Skills</h2>
+        <div class="row gy-4" data-aos="fade-up" data-aos-delay="200" data-aos="skill">
+            <div class="col-md-6">
+                <div>Python</div>
+                <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+            </div>
+            <div class="col-md-6">
+                <div>Django</div>
+                <div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div>
+            </div>
+            <div class="col-md-6">
+                <div>Flask</div>
+                <div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div>
+            </div>
+            <div class="col-md-6">
+                <div>HTML / CSS / JS</div>
+                <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+            </div>
+            <div class="col-md-6">
+                <div>GitHub</div>
+                <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+            </div>
+            <div class="col-md-6">
+                <div>Databases (PostgreSQL / MySQL)</div>
+                <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="section">
+    <div class="container">
+        <h2 class="mb-5" data-aos="fade-up">Education</h2>
+        <div class="row gy-4">
+            <div class="col-lg-8" data-aos="fade-up">
+                <h5>NTUU "Igor Sikorsky Kyiv Polytechnic Institute"</h5>
+                <p class="text-muted mb-2">Master's degree in "Information Systems and Technologies"</p>
+                <p class="text-muted">September 2022 — June 2024</p>
+            </div>
+            <div class="col-lg-8" data-aos="fade-up">
+                <h5>NTUU "Igor Sikorsky Kyiv Polytechnic Institute"</h5>
+                <p class="text-muted mb-2">Bachelor's degree in "Information Systems and Technologies"</p>
+                <p class="text-muted">September 2018 — June 2022</p>
+            </div>
+            <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+                <h5>Web Application Development using Python/Django</h5>
+                <p class="text-muted">June 2021 — December 2021, Online</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section text-center">
+    <div class="container">
+        <h2 class="mb-4" data-aos="zoom-in">Ready to discuss opportunities</h2>
+        <p class="lead mb-5" data-aos="fade-up" data-aos-delay="200">
+            Write me on Telegram or email — I respond quickly
+        </p>
+        <div data-aos="fade-up" data-aos-delay="400">
+            <a href="https://t.me/greezleee" class="btn btn-primary btn-lg px-5 me-3"><i class="fab fa-telegram"></i> Telegram</a>
+            <a href="mailto:zxcaaa12@outlook.com" class="btn btn-outline-primary btn-lg px-5"><i class="fas fa-envelope"></i> Email</a>
+        </div>
+    </div>
+</section>
+
+<footer class="text-center">
+    © 2025 Nazarii Kucher-Savinskyi • Built with ❤️ and animations
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        once: true,
+        duration: 1000,
+        easing: 'ease-out'
+    });
+</script>
+</body>
+</html>
